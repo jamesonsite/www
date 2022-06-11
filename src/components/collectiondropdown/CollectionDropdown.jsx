@@ -63,7 +63,6 @@ const CollectionDropdown = React.memo((props) => {
         delete query.variant
         query.collection = collection
 
-        debugger;
         // @TODO LEGACY
         let cdata = getCollectionData([collection])
         console.log("cdata", cdata)

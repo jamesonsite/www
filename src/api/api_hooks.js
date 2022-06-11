@@ -39,7 +39,6 @@ export const useCollectionData = () => {
 * @returns {QueryHookResult<import('./fetch').Listing[]>} 
  **/
 export const useListings = (filter = undefined) => {
-    debugger;
     // const { data: collections } = useCollections()
     const { load, data, loading, error } = useStore((state) => ({
         load: state.listings().load,
@@ -115,7 +114,6 @@ export const usePacks = () => {
  * @returns {QueryHookResult<import('./fetch').Asset[]>}
  **/
 export const useAssets = (filter = undefined) => {
-    debugger;
     const { load, data, loading, error } = useStore((state) => ({
         load: state.assets().load,
         data: state.assets().data,

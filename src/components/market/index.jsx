@@ -36,7 +36,6 @@ const Market = (props) => {
     const [showScrollUpIcon, setShowScrollUpIcon] = useState(false)
 
     const getResult = (result) => {
-        debugger
         console.log('result', result)
         // setListings(result)
         dispatch({ type: 'SET_LISTINGS', payload: result })
